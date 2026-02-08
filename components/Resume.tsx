@@ -1,6 +1,5 @@
 'use client';
 
-import Section from './Section';
 import { FileText, Download } from 'lucide-react';
 
 // Using a placeholder PDF URL for now, or assume standard path.
@@ -17,7 +16,14 @@ export default function Resume() {
     // Drive view link format: https://drive.google.com/file/d/YOUR_FILE_ID/preview
 
     return (
-        <Section id="resume" title="Resume">
+        <section id="resume" className="space-y-8">
+            <div className="flex items-center gap-4 mb-8">
+                <div className="p-3 bg-blue-50 rounded-xl text-blue-600 z-10 relative">
+                    <FileText size={24} />
+                </div>
+                <h2 className="text-2xl font-bold tracking-tight text-gray-900">Resume</h2>
+            </div>
+
             <div className="flex flex-col items-center">
                 <div className="w-full max-w-4xl h-[600px] md:h-[800px] bg-gray-100 rounded-xl overflow-hidden shadow-lg border border-gray-200 relative group">
 
@@ -45,6 +51,6 @@ export default function Resume() {
                     </div>
                 </div>
             </div>
-        </Section>
+        </section>
     );
 }

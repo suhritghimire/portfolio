@@ -1,29 +1,26 @@
 'use client';
 
+
 import { motion } from 'framer-motion';
 import { skills } from '@/lib/data';
-import Section from './Section';
 
 export default function Skills() {
     return (
-        <Section id="skills" title="Proficiency">
-            <div className="space-y-8">
+        <section id="skills" className="space-y-8">
+            <h2 className="text-3xl font-bold mb-8 text-center"><span className="text-blue-600">Specialized</span> <span className="text-red-500">Skills</span></h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 {Object.entries(skills).map(([category, items], index) => (
                     <motion.div
                         key={category}
-                        initial={{ opacity: 0, y: 10 }}
+                        initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true }}
+                        transition={{ delay: index * 0.1 }}
+                        className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
                     >
-                        <h3 className="text-xs font-semibold uppercase tracking-wider text-system-gray mb-4 ml-1">
-                            {category}
-                        </h3>
+                        <h3 className="text-xl font-bold mb-4 text-gray-800 border-b pb-2">{category}</h3>
                         <div className="flex flex-wrap gap-2">
                             {items.map((skill) => (
-                                <span
-                                    key={skill}
-                                    className="px-4 py-2 bg-white dark:bg-zinc-800 rounded-full text-sm font-medium shadow-sm border border-gray-100 dark:border-zinc-700 hover:scale-105 transition-transform cursor-default"
-                                >
+                                <span key={skill} className="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm font-medium hover:bg-gray-200 transition-colors">
                                     {skill}
                                 </span>
                             ))}
@@ -31,6 +28,6 @@ export default function Skills() {
                     </motion.div>
                 ))}
             </div>
-        </Section>
+        </section>
     );
 }
