@@ -132,10 +132,4 @@ export const research = [{
     date: '2017-06-12',
     link: 'https://arxiv.org/abs/1706.03762'
   },
-  {
-    id: '2',
-    title: 'BERT: Pre-training of Deep Bidirectional Transformers',
-    date: '2018-10-11',
-    link: 'https://arxiv.org/abs/1810.04805'
-  }
 ];

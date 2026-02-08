@@ -38,7 +38,7 @@ export default function Projects() {
                                         {project.title}
                                     </h3>
                                     <p className="text-gray-600 leading-relaxed mb-6 max-w-xl">
-                                        {project.description}
+                                        {project.points[0]}
                                     </p>
                                 </div>
                                 {project.link !== '#' && (
