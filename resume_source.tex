@@ -1,0 +1,207 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{graphicx}
+\setlength{\multicolsep}{-5pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\RequirePackage{tikz}
+\RequirePackage{xcolor}
+\RequirePackage{fontawesome}
+\usepackage{tikz}
+\usetikzlibrary{svg.path}
+
+\definecolor{cvblue}{HTML}{0E5484}
+\definecolor{black}{HTML}{130810}
+\definecolor{darkcolor}{HTML}{0F4539}
+\definecolor{cvgreen}{HTML}{3BD80D}
+\definecolor{taggreen}{HTML}{00E278}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{name}{black}
+\colorlet{tagline}{darkcolor}
+\colorlet{heading}{darkcolor}
+\colorlet{headingrule}{cvblue}
+\colorlet{accent}{darkcolor}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+% Adjust margins to fit on one page
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.2in}
+\addtolength{\topmargin}{-0.7in}
+\addtolength{\textheight}{1.2in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting with tighter spacing
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands with tighter spacing
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-1.5pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\large#1} & \textbf{\small #2} \\
+      \textit{\normalsize#3} & \textbf{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeProjectHeading}[3]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \small #2 \\
+      \textit{\small#3} & \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-3pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\newcommand\sbullet[1][.5]{\mathbin{\vcenter{\hbox{\scalebox{#1}{$\bullet$}}}}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    {\Huge \scshape Suhrit Ghimire} \\ \vspace{1pt}
+    \small \href{tel:+919625609307}{\raisebox{-0.1\height}\faPhone\ \underline{+91 9625609307}} ~ 
+    \href{mailto:suhrit1.ghimire@gmail.com}{\raisebox{-0.2\height}\faEnvelope\ \underline{suhrit1.ghimire@gmail.com}} ~ 
+    \href{https://www.suhrit.com.np}{\raisebox{-0.2\height}\faGlobe\ \underline{www.suhrit.com.np}} ~ 
+    \href{https://www.linkedin.com/in/suhrit-ghimire-b92913195/brial}{\raisebox{-0.2\height}\faLinkedinSquare\ \underline{LinkedIn}} \\
+    \vspace{-4pt}
+    \vspace{-8pt}
+\end{center}
+\vspace{10pt}
+%-----------EDUCATION-----------
+\section{EDUCATION}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Delhi Technological University, New Delhi}{2023--2027}
+      {B.Tech in Computer Science Engineering}{\textbf{9.51 CGPA}}
+      
+    \resumeSubheading
+      {DAV Sushil Kedia Vishwa Bharti School, Kathmandu}{2022}
+      {CBSE (Grade XII)}{\textbf{96.2\%}}
+  \resumeSubHeadingListEnd
+\vspace{-8pt}
+
+%-----------EXPERIENCE & POSITION OF RESPONSIBILITY-----------
+\section{EXPERIENCE AND POSITION OF RESPONSIBILITY}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Insight Workshop, Lalitpur, Nepal}{May – July 2024}
+      {Software Engineering Intern}{\href{https://drive.google.com/file/d/1PInXlWxzEL-QD-s5kg_1YyK6Ph4JnYR1/view?usp=sharing}{\faExternalLink\ \underline{Certificate}}}
+      \resumeItemListStart
+        \resumeItem{Built \textbf{responsive UI components} for the LevelUp platform using React}
+        \resumeItem{Applied \textbf{optimization techniques} such as dynamic programming to improve performance and resource efficiency}
+        \resumeItem{Designed UI prototypes in Figma and participated in code reviews and team knowledge-sharing sessions}
+      \resumeItemListEnd  
+\vspace{-8pt}
+
+%-----------PROJECTS-----------
+\section{DATA ENGINEERING \& APPLIED SCIENCE PROJECTS}
+    \resumeSubHeadingListStart
+       \resumeProjectHeading
+          {\textbf{Hate Speech Detection with Deep Learning Architectures}}{\href{https://github.com/suhritghimire/Hate-Speech-Detection-Using-Bi-directional-LSTM}{\faExternalLink\ \underline{Link}}}
+          {PyTorch, Transformers, BERT, LSTM, BiLSTM, Scikit-learn}
+          \resumeItemListStart
+            \resumeItem{Implemented and compared \textbf{LSTM, Bi-directional LSTM, and BERT variants} for hate speech classification}
+            \resumeItem{Conducted \textbf{three BERT fine-tuning experiments}: frozen hidden layers, unfrozen layers, and classification layer-only updates}
+            \resumeItem{Performed comprehensive text preprocessing with tokenization, padding, and embedding layers; utilized BERT tokenizer}
+            \resumeItem{Implemented attention mechanisms in LSTM models to focus on hate-indicative tokens; achieved \textbf{92\% F1-score} with fine-tuned BERT}
+          \resumeItemListEnd
+          
+       \resumeProjectHeading
+          {\textbf{Transformer Architecture Implementation from Scratch}}{\href{#}{\faExternalLink\ \underline{Link}}}
+          {PyTorch, NumPy, Matplotlib}
+          \resumeItemListStart
+            \resumeItem{Implemented \textbf{complete transformer architecture from scratch} using only PyTorch, including multi-head attention and positional encoding}
+            \resumeItem{Designed scaled dot-product attention with masking capabilities for both encoder and decoder components}
+            \resumeItem{Built modular components for embedding layers, layer normalization, residual connections, and the encoder-decoder stack}
+          \resumeItemListEnd 
+          
+       \resumeProjectHeading
+          {\textbf{bRial – Content Platform with Data Quality Pipeline}}{\href{https://brial-6fd01.web.app}{\faExternalLink\ \underline{Live Demo}}}
+          {Flutter, Firebase, Python, Word2Vec}
+          \resumeItemListStart
+            \resumeItem{Architected a \textbf{scalable cloud-based data backend} using Firebase to manage user-generated content}
+            \resumeItem{Developed a \textbf{data quality pipeline} using Word2Vec and ML models to analyze and filter content, ensuring platform integrity}
+            \resumeItem{Optimized \textbf{data flows and state management} using BLoC pattern for data-intensive operations}
+          \resumeItemListEnd
+       
+    \resumeSubHeadingListEnd
+\vspace{-8pt}
+
+%-----------ACADEMIC ACHIEVEMENTS AND AWARDS-----------
+\section{ACADEMIC ACHIEVEMENTS AND AWARDS}
+  \begin{itemize}[leftmargin=0.15in, label=\textbullet, itemsep=0pt, parsep=0pt]
+    \small
+    \item \href{https://www.codechef.com/users/suhrit_g}{\textbf{CodeChef 4-star (max rating: 1872)} \faExternalLink} | Strong algorithmic and SQL problem-solving skills
+    \item \href{https://codeforces.com/profile/suhrit.g}{\textbf{Codeforces Specialist (max rating: 1430)} \faExternalLink} | 900+ problems solved across various CP platforms
+    \item \href{https://courses.cognitiveclass.ai/certificates/5123c9b9c180486aad997958f514af45}{\textbf{IBM Certified: Machine Learning with Python (ML0101EN)} \faExternalLink}
+    \item Received the \textbf{ICCR Scholarship}, a full-ride scholarship by the Government of India for BTech Studies
+  \end{itemize}
+\vspace{-8pt}
+
+%-----------TECHNICAL SKILLS-----------
+\section{TECHNICAL SKILLS}
+ \begin{itemize}[leftmargin=0.15in, label={}, itemsep=0pt, parsep=0pt]
+    \small{\item{
+     \textbf{Data Engineering:} SQL, Python (Pandas, NumPy), ETL Concepts, Data Modeling \\
+     \textbf{Applied Science \& ML:} PyTorch, TensorFlow, Transformers, BERT, LSTM, Deep Learning, Statistical Modeling \\
+     \textbf{Programming Languages:} Python, C, C++, Dart, JavaScript \\
+     \textbf{Tools \& Platforms:} Git, GitHub, VS Code, Jupyter Notebook, Scikit-learn, Matplotlib, Seaborn \\
+    }}
+ \end{itemize}
+
+\end{document}
