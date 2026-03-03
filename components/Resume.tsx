@@ -6,8 +6,6 @@ import { FileText, Download } from 'lucide-react';
 // If the user has a Drive link, we can iframe it.
 // User said: "display the drive pdf there itself".
 // Since I don't have the link yet, I will make a placeholder that CAN take a link or use a local file.
-// The user's LaTeX didn't have a direct drive link to the PDF, just to the drive folder maybe? 
-// Wait, the user prompt said: "Research section ... link to my drive ...".
 // For Resume: "My resume section that will show the pdf of my resume from drive link".
 // I'll create a flexible component.
 

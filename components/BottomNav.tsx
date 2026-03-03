@@ -9,7 +9,7 @@ const navItems = [
     { name: 'Home', href: '/', icon: Home, color: 'bg-blue-500', textColor: 'text-blue-500' },
     { name: 'Experience', href: '/experience', icon: Briefcase, color: 'bg-green-500', textColor: 'text-green-500' },
     { name: 'Projects', href: '/projects', icon: Code, color: 'bg-amber-500', textColor: 'text-amber-500' },
-    { name: 'Research', href: '/research', icon: Book, color: 'bg-red-500', textColor: 'text-red-500' },
+
     { name: 'Contact', href: '/contact', icon: Mail, color: 'bg-purple-500', textColor: 'text-purple-500' },
 ];
 

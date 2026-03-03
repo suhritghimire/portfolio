@@ -4,7 +4,7 @@ import { personalInfo } from '@/lib/data';
 import { motion } from 'framer-motion';
 import Experience from '@/components/Experience';
 import Projects from '@/components/Projects';
-import Research from '@/components/Research';
+
 import Contact from '@/components/Contact';
 
 export default function Home() {
@@ -24,7 +24,7 @@ export default function Home() {
 
         <div className="prose prose-xl text-gray-800 leading-relaxed max-w-3xl">
           <p>
-            I am <span className="font-semibold text-black">{personalInfo.name}</span>, a Data Engineer & ML Researcher based in New Delhi.
+            I am <span className="font-semibold text-black">{personalInfo.name}</span>, a Data Engineer & ML Developer based in New Delhi.
           </p>
           <p>
             I specialize in architecting high-throughput data pipelines and designing deep learning models that solve real-world ambiguity. Currently pursuing Computer Science Engineering at <strong>Delhi Technological University</strong>.
@@ -103,10 +103,7 @@ export default function Home() {
           <Projects />
         </section>
 
-        <section className="space-y-8">
-          <h2 className="text-3xl font-bold tracking-tight">Research</h2>
-          <Research />
-        </section>
+
 
         <section className="space-y-8">
           <h2 className="text-3xl font-bold tracking-tight">Contact</h2>

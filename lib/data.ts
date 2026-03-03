@@ -126,10 +126,4 @@ export const awards = [
   },
 ];
 
-export const research = [{
-    id: '1',
-    title: 'Attention Is All You Need',
-    date: '2017-06-12',
-    link: 'https://arxiv.org/abs/1706.03762'
-  },
-];
+
