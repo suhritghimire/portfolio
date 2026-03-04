@@ -1,1 +1,2 @@
-// File removed as part of research section removal.
+// This script has been deprecated.
+console.log('This script is no longer supported.');

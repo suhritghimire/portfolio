@@ -9,14 +9,14 @@ export const personalInfo = {
   resume: "https://drive.google.com/file/d/1-wH_3Em-qfmlc87WIErY186X6xv_Bzdm/view?usp=sharing",
   location: "New Delhi, India",
   image: "/profile.jpeg",
-  about: "I am a Computer Science Engineering student at Delhi Technological University specializing in Data Engineering and Applied Machine Learning. My expertise lies in Natural Language Processing (NLP), Deep Learning architectures, and Statistical Modeling. I am an active competitive programmer with a strong command of Algorithms and Linear Algebra. I also build cross-platform applications using Flutter.",
+  about: "I am a Computer Science Engineering student at Delhi Technological University specializing in ML, DL, and NLP. My work focuses on architecting transformer-based systems, fine-tuning neural models, and building robust linguistic data pipelines. I am also an active competitive programmer and researcher in the space of low-resource languages.",
   interests: [
-    "Natural Language Processing",
-    "Deep Learning",
-    "Data Engineering",
-    "Competitive Programming",
-    "Linear Algebra",
-    "System Design"
+    "Machine Learning (ML)",
+    "Deep Learning (DL)",
+    "Natural Language Processing (NLP)",
+    "Neural Machine Translation",
+    "Transformer Architectures",
+    "Competitive Programming"
   ],
 };
 
@@ -64,25 +64,24 @@ export const experience = [
 
 export const projects = [
   {
-    title: "Hate Speech Detection with Deep Learning Architectures",
-    tech: ["PyTorch", "Transformers", "BERT", "LSTM", "BiLSTM", "Scikit-learn"],
-    points: [
-      "Implemented and compared LSTM, Bi-directional LSTM, and BERT variants for hate speech classification.",
-      "Conducted three BERT fine-tuning experiments: frozen hidden layers, unfrozen layers, and classification layer-only updates.",
-      "Performed comprehensive text preprocessing with tokenization, padding, and embedding layers; utilized BERT tokenizer.",
-      "Implemented attention mechanisms in LSTM models to focus on hate-indicative tokens; achieved 92% F1-score with fine-tuned BERT.",
-    ],
-    link: "https://github.com/suhritghimire/Hate-Speech-Detection-Using-Bi-directional-LSTM",
-  },
-  {
     title: "Transformer Architecture Implementation from Scratch",
     tech: ["PyTorch", "NumPy", "Matplotlib"],
     points: [
-      "Implemented complete transformer architecture from scratch using only PyTorch, including multi-head attention and positional encoding.",
-      "Designed scaled dot-product attention with masking capabilities for both encoder and decoder components.",
-      "Built modular components for embedding layers, layer normalization, residual connections, and the encoder-decoder stack.",
+      "Implemented the complete 'Attention Is All You Need' architecture using core PyTorch kernels.",
+      "Coded Multi-Head Attention, Position-wise Feed-Forward networks, and Sinusoidal Positional Encodings manually.",
+      "Built a modular encoder-decoder stack with residual connections and layer normalization to understand modern neural foundations.",
     ],
     link: "https://github.com/suhritghimire/Transformer-from-Scratch-Using-only-PyTorch",
+  },
+  {
+    title: "Hate Speech Classification with BERT & Attention",
+    tech: ["PyTorch", "Transformers", "BERT", "LSTM", "Scikit-learn"],
+    points: [
+      "Fine-tuned BERT variants (base, large, multilingual) reaching a 92% F1-score on complex social media datasets.",
+      "Implemented custom Attention layers over Bi-directional LSTMs to visualize and interpret hate-indicative token importance.",
+      "Conducted ablation studies on layer freezing and unfrozen weights to optimize transformer convergence in specific domains.",
+    ],
+    link: "https://github.com/suhritghimire/Hate-Speech-Detection-Using-Bi-directional-LSTM",
   },
   {
     title: "bRial – Content Platform with Data Quality Pipeline",

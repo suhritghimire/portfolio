@@ -1,1 +1,5 @@
-// File removed as part of research section removal.
+'use client';
+
+export default function ResearchPage() {
+    return null;
+}
