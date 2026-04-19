@@ -24,7 +24,7 @@ export default function Home() {
 
         <div className="prose prose-xl text-gray-800 leading-relaxed max-w-3xl">
           <p>
-            I am <span className="font-semibold text-black">{personalInfo.name}</span>, a developer specializing in <span className="text-black font-semibold">ML, DL, and NLP</span>.
+            I am <span className="font-semibold text-black">{personalInfo.name}</span>, a developer specializing in <span className="text-black font-semibold">ML, DL, NLP, and Speech AI</span>.
           </p>
           <p>
             I specialize in architecting transformer models and building high-throughput data pipelines for linguistic intelligence. Currently pursuing Computer Science Engineering at <strong>Delhi Technological University</strong>.
