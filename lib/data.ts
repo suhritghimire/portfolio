@@ -9,7 +9,7 @@ export const personalInfo = {
   resume: "https://drive.google.com/file/d/1-wH_3Em-qfmlc87WIErY186X6xv_Bzdm/view?usp=sharing",
   location: "New Delhi, India",
   image: "/profile.jpeg",
-  about: "I am a Computer Science Engineering student at Delhi Technological University specializing in ML, DL, and NLP. My work focuses on architecting transformer-based systems, fine-tuning neural models, and building robust linguistic data pipelines. I am also an active competitive programmer and researcher in the space of low-resource languages.",
+  about: "I am a Computer Science Engineering student at Delhi Technological University specializing in ML, DL, and NLP. My work focuses on architecting transformer-based systems, Speech AI (specifically Spontaneous TTS), fine-tuning neural models, and building robust linguistic data pipelines. I am also an active researcher in low-resource languages and an active competitive programmer.",
   interests: [
     "Speech AI & TTS",
     "Machine Learning (ML)",
