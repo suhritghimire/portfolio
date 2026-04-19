@@ -1,37 +1,35 @@
 import { ImageResponse } from 'next/og';
+import fs from 'fs';
+import path from 'path';
 
-export const runtime = 'edge';
-export const dynamic = 'force-static';
-
-export const size = {
-    width: 32,
-    height: 32,
-};
+export const size = { width: 32, height: 32 };
 export const contentType = 'image/png';
 
 export default function Icon() {
-    return new ImageResponse(
-        (
-            <div
-                style={{
-                    fontSize: 24,
-                    background: '#4285F4', // Google Blue
-                    width: '100%',
-                    height: '100%',
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    color: 'white',
-                    borderRadius: '8px', // Rounded square
-                    fontFamily: 'sans-serif',
-                    fontWeight: 'bold',
-                }}
-            >
-                S
-            </div>
-        ),
-        {
-            ...size,
-        }
-    );
+  const imagePath = path.join(process.cwd(), 'public', 'profile.jpeg');
+  const imageData = fs.readFileSync(imagePath);
+  const base64 = imageData.toString('base64');
+  const dataUrl = `data:image/jpeg;base64,${base64}`;
+
+  return new ImageResponse(
+    (
+      <div
+        style={{
+          width: '100%',
+          height: '100%',
+          display: 'flex',
+          borderRadius: '50%',
+          overflow: 'hidden',
+        }}
+      >
+        <img
+          src={dataUrl}
+          width={32}
+          height={32}
+          style={{ objectFit: 'cover' }}
+        />
+      </div>
+    ),
+    { ...size }
+  );
 }
