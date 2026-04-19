@@ -39,12 +39,12 @@ export default function Experience() {
     return (
         <div className="space-y-16 relative">
             {/* Central Line for Desktop */}
-            <div className="hidden lg:block absolute left-8 top-0 bottom-0 w-0.5 bg-gray-200 dark:bg-zinc-800" />
+            <div className="hidden lg:block absolute left-8 top-0 bottom-0 w-0.5 bg-gray-100 dark:bg-zinc-800" />
 
             {/* Experience Section */}
             <section className="space-y-8">
                 <div className="flex items-center gap-4 mb-8">
-                    <div className="p-3 bg-blue-50 dark:bg-blue-900/20 text-blue-600 dark:text-blue-400 rounded-xl z-10 relative">
+                    <div className="p-3 bg-white dark:bg-blue-900/20 text-blue-600 dark:text-blue-400 rounded-xl z-10 relative border border-gray-100 dark:border-transparent transition-colors">
                         <Briefcase size={24} />
                     </div>
                     <h2 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-zinc-100">Work History</h2>
@@ -101,7 +101,7 @@ export default function Experience() {
             {/* Education Section */}
             <section className="space-y-8 relative">
                 <div className="flex items-center gap-4 mb-8">
-                    <div className="p-3 bg-green-50 dark:bg-green-900/20 text-green-600 dark:text-green-400 rounded-xl z-10 relative">
+                    <div className="p-3 bg-white dark:bg-green-900/20 text-green-600 dark:text-green-400 rounded-xl z-10 relative border border-gray-100 dark:border-transparent transition-colors">
                         <GraduationCap size={24} />
                     </div>
                     <h2 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-zinc-100">Academics</h2>

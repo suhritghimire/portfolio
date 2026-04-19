@@ -75,7 +75,7 @@ export default function Home() {
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        className="bg-gray-50 dark:bg-black rounded-3xl p-10 lg:p-14 border border-transparent dark:border-zinc-800 transition-colors duration-300"
+        className="bg-white dark:bg-black rounded-3xl p-10 lg:p-14 border border-gray-100 dark:border-zinc-800 transition-colors duration-300"
       >
         <div className="max-w-4xl">
           <h2 className="text-3xl font-bold mb-8 dark:text-white">The "Why"</h2>
@@ -95,7 +95,7 @@ export default function Home() {
         initial={{ opacity: 0, scale: 0.95 }}
         whileInView={{ opacity: 1, scale: 1 }}
         viewport={{ once: true }}
-        className="relative overflow-hidden bg-gradient-to-br from-[#4285F4]/10 to-[#34A853]/10 dark:from-[#4285F4]/5 dark:to-[#34A853]/5 dark:bg-black rounded-[2.5rem] p-10 lg:p-14 border border-blue-100 dark:border-zinc-800 transition-colors duration-300"
+        className="relative overflow-hidden bg-white dark:bg-black rounded-[2.5rem] p-10 lg:p-14 border border-blue-50 dark:border-zinc-800 transition-colors duration-300"
       >
         <div className="max-w-4xl relative z-10">
           <h2 className="text-3xl font-bold mb-6 flex items-center gap-3 dark:text-white">

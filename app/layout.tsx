@@ -38,7 +38,6 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <MouseGradient />
           <Sidebar />
           <main className="flex-1 lg:ml-80 min-h-screen p-8 lg:p-16 max-w-5xl mx-auto pb-32">
             {children}

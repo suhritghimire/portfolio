@@ -40,13 +40,13 @@ export default function Sidebar() {
 
                 {/* Socials */}
                 <div className="flex flex-wrap gap-3 items-center">
-                    <a href={personalInfo.linkedin} target="_blank" rel="noopener noreferrer" className="p-2.5 bg-gray-50 dark:bg-zinc-900 rounded-full text-gray-600 dark:text-zinc-400 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-blue-50 dark:hover:bg-blue-900/30 transition-all border border-gray-100 dark:border-zinc-800">
+                    <a href={personalInfo.linkedin} target="_blank" rel="noopener noreferrer" className="p-2.5 bg-white dark:bg-zinc-900 rounded-full text-gray-600 dark:text-zinc-400 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-blue-50 dark:hover:bg-blue-900/30 transition-all border border-gray-100 dark:border-zinc-800">
                         <Linkedin size={20} />
                     </a>
-                    <a href={personalInfo.github} target="_blank" rel="noopener noreferrer" className="p-2.5 bg-gray-50 dark:bg-zinc-900 rounded-full text-gray-600 dark:text-zinc-400 hover:text-black dark:hover:text-white hover:bg-gray-200 dark:hover:bg-zinc-800 transition-all border border-gray-100 dark:border-zinc-800">
+                    <a href={personalInfo.github} target="_blank" rel="noopener noreferrer" className="p-2.5 bg-white dark:bg-zinc-900 rounded-full text-gray-600 dark:text-zinc-400 hover:text-black dark:hover:text-white hover:bg-gray-200 dark:hover:bg-zinc-800 transition-all border border-gray-100 dark:border-zinc-800">
                         <Github size={20} />
                     </a>
-                    <a href={`mailto:${personalInfo.email}`} className="p-2.5 bg-gray-50 dark:bg-zinc-900 rounded-full text-gray-600 dark:text-zinc-400 hover:text-red-500 dark:hover:text-red-400 hover:bg-red-50 dark:hover:bg-red-900/30 transition-all border border-gray-100 dark:border-zinc-800">
+                    <a href={`mailto:${personalInfo.email}`} className="p-2.5 bg-white dark:bg-zinc-900 rounded-full text-gray-600 dark:text-zinc-400 hover:text-red-500 dark:hover:text-red-400 hover:bg-red-50 dark:hover:bg-red-900/30 transition-all border border-gray-100 dark:border-zinc-800">
                         <Mail size={20} />
                     </a>
                 </div>
