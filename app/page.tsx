@@ -11,20 +11,19 @@ export default function Home() {
   return (
     <div className="space-y-24">
       {/* Intro Section */}
-      {/* Intro Section */}
       <motion.section
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         className="space-y-8"
       >
-        <h1 className="text-5xl lg:text-7xl font-bold tracking-tight text-black leading-[1.1]">
+        <h1 className="text-5xl lg:text-7xl font-bold tracking-tight text-black dark:text-zinc-100 leading-[1.1]">
           Building systems that <br />
           <span className="text-[#4285F4]">scale</span> <span className="text-[#EA4335]">&</span> <span className="text-[#FBBC05]">learn</span><span className="text-[#34A853]">.</span>
         </h1>
 
-        <div className="prose prose-xl text-gray-800 leading-relaxed max-w-3xl">
+        <div className="prose prose-xl text-gray-800 dark:text-zinc-300 leading-relaxed max-w-3xl">
           <p>
-            I am <span className="font-semibold text-black">{personalInfo.name}</span>, a developer specializing in <span className="text-black font-semibold">ML, DL, NLP, and Speech AI</span>.
+            I am <span className="font-semibold text-black dark:text-white">{personalInfo.name}</span>, a developer specializing in <span className="text-black dark:text-white font-semibold">ML, DL, NLP, and Speech AI</span>.
           </p>
           <p>
             I specialize in architecting transformer models and building high-throughput data pipelines for linguistic intelligence. Currently pursuing Computer Science Engineering at <strong>Delhi Technological University</strong>.
@@ -40,21 +39,21 @@ export default function Home() {
         className="grid grid-cols-1 md:grid-cols-2 gap-12"
       >
         <div className="space-y-6">
-          <h3 className="text-sm font-bold uppercase tracking-widest text-gray-500 border-b pb-4">Engineering Gradient</h3>
-          <p className="text-lg text-gray-700">
+          <h3 className="text-sm font-bold uppercase tracking-widest text-gray-500 dark:text-zinc-500 border-b dark:border-zinc-800 pb-4">Engineering Gradient</h3>
+          <p className="text-lg text-gray-700 dark:text-zinc-400">
             My work exists at the intersection of <strong className="text-[#4285F4]">Linguistic Intelligence</strong> and <strong className="text-[#34A853]">Scalable Systems</strong>. I don't just fine-tune models; I build the infrastructure that powers them at scale.
           </p>
         </div>
 
         <div className="space-y-6">
-          <h3 className="text-sm font-bold uppercase tracking-widest text-gray-500 border-b pb-4">Toolkit</h3>
+          <h3 className="text-sm font-bold uppercase tracking-widest text-gray-500 dark:text-zinc-500 border-b dark:border-zinc-800 pb-4">Toolkit</h3>
           <div className="flex flex-wrap gap-3">
             {['Python', 'C++', 'SQL', 'Pandas', 'NumPy', 'PyTorch', 'TensorFlow', 'Flutter', 'Dart', 'Scikit-learn', 'Git'].map((tech, i) => {
               const colors = [
-                'border-blue-200 bg-blue-50 text-blue-700 hover:bg-blue-600',
-                'border-red-200 bg-red-50 text-red-700 hover:bg-red-600',
-                'border-yellow-200 bg-yellow-50 text-yellow-700 hover:bg-yellow-500',
-                'border-green-200 bg-green-50 text-green-700 hover:bg-green-600'
+                'border-blue-200 bg-blue-50 text-blue-700 hover:bg-blue-600 dark:border-blue-900/30 dark:bg-blue-950/20 dark:text-blue-400',
+                'border-red-200 bg-red-50 text-red-700 hover:bg-red-600 dark:border-red-900/30 dark:bg-red-950/20 dark:text-red-400',
+                'border-yellow-200 bg-yellow-50 text-yellow-700 hover:bg-yellow-500 dark:border-yellow-900/30 dark:bg-yellow-950/20 dark:text-yellow-400',
+                'border-green-200 bg-green-50 text-green-700 hover:bg-green-600 dark:border-green-900/30 dark:bg-green-950/20 dark:text-green-400'
               ];
               const colorClass = colors[i % 4];
 
@@ -76,11 +75,11 @@ export default function Home() {
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        className="bg-gray-50 rounded-3xl p-10 lg:p-14"
+        className="bg-gray-50 dark:bg-zinc-900/50 rounded-3xl p-10 lg:p-14 border border-transparent dark:border-zinc-800"
       >
         <div className="max-w-4xl">
-          <h2 className="text-3xl font-bold mb-8">The "Why"</h2>
-          <div className="space-y-6 text-lg text-gray-700 leading-relaxed">
+          <h2 className="text-3xl font-bold mb-8 dark:text-white">The "Why"</h2>
+          <div className="space-y-6 text-lg text-gray-700 dark:text-zinc-400 leading-relaxed">
             <p>
               Code is my medium for exploring complexity. Whether it's optimizing a distributed system for <strong>millisecond latency</strong> or fine-tuning a transformer model for <strong>semantic understanding</strong>, I am driven by the challenge of making machines "think" and "act" efficiently.
             </p>
@@ -96,32 +95,32 @@ export default function Home() {
         initial={{ opacity: 0, scale: 0.95 }}
         whileInView={{ opacity: 1, scale: 1 }}
         viewport={{ once: true }}
-        className="relative overflow-hidden bg-gradient-to-br from-[#4285F4]/10 to-[#34A853]/10 rounded-[2.5rem] p-10 lg:p-14 border border-blue-100"
+        className="relative overflow-hidden bg-gradient-to-br from-[#4285F4]/10 to-[#34A853]/10 dark:from-[#4285F4]/20 dark:to-[#34A853]/20 rounded-[2.5rem] p-10 lg:p-14 border border-blue-100 dark:border-blue-900/30"
       >
         <div className="max-w-4xl relative z-10">
-          <h2 className="text-3xl font-bold mb-6 flex items-center gap-3">
+          <h2 className="text-3xl font-bold mb-6 flex items-center gap-3 dark:text-white">
              Speech AI Research
           </h2>
-          <p className="text-lg text-gray-800 leading-relaxed">
-            Building a <span className="font-semibold text-blue-700">zero-shot spontaneous TTS framework</span> to clone voices while preserving natural disfluencies (filled pauses, prosody). My work combines speaker-encoder architectures with self-supervised representations to capture expressive speech markers from minimal target data.
+          <p className="text-lg text-gray-800 dark:text-zinc-200 leading-relaxed">
+            Building a <span className="font-semibold text-blue-700 dark:text-blue-400">zero-shot spontaneous TTS framework</span> to clone voices while preserving natural disfluencies (filled pauses, prosody). My work combines speaker-encoder architectures with self-supervised representations to capture expressive speech markers from minimal target data.
           </p>
         </div>
       </motion.section>
 
       {/* Main Content Sections */}
-      <div className="space-y-32 pt-12 border-t border-gray-100">
+      <div className="space-y-32 pt-12 border-t border-gray-100 dark:border-zinc-800">
         <section id="experience" className="space-y-12">
-          <h2 className="text-4xl font-bold tracking-tight">Work & Education</h2>
+          <h2 className="text-4xl font-bold tracking-tight dark:text-white">Work & Education</h2>
           <Experience />
         </section>
 
         <section id="projects" className="space-y-12">
-          <h2 className="text-4xl font-bold tracking-tight">Projects</h2>
+          <h2 className="text-4xl font-bold tracking-tight dark:text-white">Projects</h2>
           <Projects />
         </section>
 
         <section id="contact" className="space-y-12">
-          <h2 className="text-4xl font-bold tracking-tight">Get in Touch</h2>
+          <h2 className="text-4xl font-bold tracking-tight dark:text-white">Get in Touch</h2>
           <Contact />
         </section>
       </div>
