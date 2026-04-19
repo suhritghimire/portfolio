@@ -69,7 +69,7 @@ export default function Experience() {
                                     className={`group relative bg-white dark:bg-zinc-900/50 border ${color.border} rounded-[2rem] p-8 overflow-hidden hover:shadow-lg transition-all duration-300`}
                                 >
                                     {/* Subtle Background Tint */}
-                                    <div className={`absolute inset-0 opacity-[0.03] dark:opacity-[0.05] ${color.bg}`} />
+                                    <div className={`absolute inset-0 opacity-0 dark:opacity-[0.05] ${color.bg}`} />
 
                                     <div className="relative z-10 flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-4">
                                         <div>

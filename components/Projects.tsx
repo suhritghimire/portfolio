@@ -46,7 +46,7 @@ export default function Projects() {
                         className={`group relative bg-white dark:bg-zinc-900/50 border ${color.border} ${color.hoverBorder} rounded-[2rem] p-8 overflow-hidden cursor-pointer hover:shadow-lg transition-all duration-300`}
                     >
                         {/* Background Tint */}
-                        <div className={`absolute inset-0 opacity-[0.03] dark:opacity-[0.05] bg-current`} />
+                        <div className={`absolute inset-0 opacity-0 dark:opacity-[0.05] bg-current`} />
 
                         <div className="relative z-10">
                             <div className="flex justify-between items-start">
