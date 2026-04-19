@@ -21,7 +21,7 @@ export default function Contact() {
 
     return (
         <div className="max-w-xl">
-            <div className="relative overflow-hidden bg-white dark:bg-zinc-900 border border-gray-100 dark:border-zinc-800 rounded-[2.5rem] p-8 shadow-sm transition-colors duration-300">
+            <div className="relative overflow-hidden bg-white dark:bg-black border border-gray-100 dark:border-zinc-800 rounded-[2.5rem] p-8 shadow-sm transition-colors duration-300">
                 {/* Decorative Google Gradient Line */}
                 <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-blue-500 via-red-500 to-yellow-500" />
 

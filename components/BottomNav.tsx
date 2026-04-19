@@ -17,7 +17,7 @@ export default function BottomNav() {
 
     return (
         <div className="fixed bottom-8 left-1/2 -translate-x-1/2 z-50 w-full max-w-xs sm:max-w-md lg:max-w-none flex justify-center">
-            <div className="flex items-center gap-1 p-2 bg-white/80 dark:bg-zinc-900/90 backdrop-blur-xl rounded-full border border-gray-200 dark:border-zinc-800 shadow-2xl ring-1 ring-black/5 dark:ring-white/10 transition-colors duration-300">
+            <div className="flex items-center gap-1 p-2 bg-white/80 dark:bg-black/90 backdrop-blur-xl rounded-full border border-gray-200 dark:border-zinc-800 shadow-2xl ring-1 ring-black/5 dark:ring-white/10 transition-colors duration-300">
                 {navItems.map((item) => {
                     const Icon = item.icon;
                     // Simple logic for active state on single page: check if href is in the hash or if it's home and hash is empty

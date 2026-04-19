@@ -7,7 +7,7 @@ import { ThemeToggle } from './ThemeToggle';
 
 export default function Sidebar() {
     return (
-        <aside className="w-full lg:w-80 h-auto lg:h-screen lg:fixed lg:top-0 lg:left-0 bg-white dark:bg-zinc-950 border-r border-gray-100 dark:border-zinc-800 flex flex-col p-8 z-40 overflow-y-auto transition-colors duration-300">
+        <aside className="w-full lg:w-80 h-auto lg:h-screen lg:fixed lg:top-0 lg:left-0 bg-white dark:bg-black border-r border-gray-100 dark:border-zinc-800 flex flex-col p-8 z-40 overflow-y-auto transition-colors duration-300">
             {/* Top Bar with Toggle */}
             <div className="flex justify-between items-center mb-6">
                 <ThemeToggle />
@@ -16,9 +16,9 @@ export default function Sidebar() {
             {/* Profile Header */}
             <div className="flex flex-col items-start">
                 {/* Google Brand Ring */}
-                <div className="relative w-24 h-24 mb-6 ring-2 ring-gray-100 dark:ring-zinc-800 rounded-full p-[3px] bg-white dark:bg-zinc-950">
+                <div className="relative w-24 h-24 mb-6 ring-2 ring-gray-100 dark:ring-zinc-800 rounded-full p-[3px] bg-white dark:bg-black">
                     <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-[#4285F4] via-[#EA4335] to-[#FBBC05] p-[3px]">
-                        <div className="w-full h-full bg-white dark:bg-zinc-950 rounded-full flex items-center justify-center overflow-hidden">
+                        <div className="w-full h-full bg-white dark:bg-black rounded-full flex items-center justify-center overflow-hidden">
                             <div className="relative w-full h-full">
                                 <Image
                                     src={personalInfo.image}

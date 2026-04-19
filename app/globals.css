@@ -5,6 +5,11 @@
   --foreground: #000000;
 }
 
+.dark {
+  --background: #000000;
+  --foreground: #ffffff;
+}
+
 body {
   color: var(--foreground);
   background: var(--background);
