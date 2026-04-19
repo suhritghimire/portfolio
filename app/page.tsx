@@ -103,10 +103,7 @@ export default function Home() {
              Speech AI Research
           </h2>
           <p className="text-lg text-gray-800 leading-relaxed">
-            I am currently <span className="font-semibold text-blue-700">developing a framework for zero-shot spontaneous TTS voice cloning</span> that preserves natural disfluencies (filled pauses, word repetitions, prosodic variations)—a key gap in current expressive speech synthesis. 
-          </p>
-          <p className="text-lg text-gray-800 leading-relaxed mt-4">
-            Implementing a speaker-encoder architecture combined with a non-autoregressive duration predictor and experimenting with self-supervised representations to capture spontaneous speech characteristics from minimal target speaker data.
+            Building a <span className="font-semibold text-blue-700">zero-shot spontaneous TTS framework</span> to clone voices while preserving natural disfluencies (filled pauses, prosody). My work combines speaker-encoder architectures with self-supervised representations to capture expressive speech markers from minimal target data.
           </p>
         </div>
       </motion.section>
