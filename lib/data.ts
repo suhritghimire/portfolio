@@ -11,6 +11,7 @@ export const personalInfo = {
   image: "/profile.jpeg",
   about: "I am a Computer Science Engineering student at Delhi Technological University specializing in ML, DL, and NLP. My work focuses on architecting transformer-based systems, fine-tuning neural models, and building robust linguistic data pipelines. I am also an active competitive programmer and researcher in the space of low-resource languages.",
   interests: [
+    "Speech AI & TTS",
     "Machine Learning (ML)",
     "Deep Learning (DL)",
     "Natural Language Processing (NLP)",
@@ -18,6 +19,7 @@ export const personalInfo = {
     "Transformer Architectures",
     "Competitive Programming"
   ],
+  speechAI: "Developing a framework for zero-shot spontaneous TTS voice cloning that preserves natural disfluencies (filled pauses, word repetitions, prosodic variations) – a key gap in current expressive speech synthesis. Implementing a speaker-encoder architecture combined with a non-autoregressive duration predictor; experimenting with self-supervised representations to capture spontaneous speech characteristics from minimal target speaker data. Building evaluation metrics beyond standard MOS, focusing on spontaneous naturalness (disfluency rate, prosody similarity). Initial experiments show promising retention of paralinguistic markers in cloned voices."
 };
 
 export const education = [

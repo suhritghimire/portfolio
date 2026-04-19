@@ -45,15 +45,6 @@ export default function Sidebar() {
                         <Mail size={20} />
                     </a>
 
-                    {/* Resume Button - Integrated */}
-                    <a
-                        href={personalInfo.resume}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="flex items-center gap-2 px-4 py-2.5 rounded-full bg-[#4285F4] text-white text-sm font-semibold shadow-md shadow-blue-200 hover:bg-[#3367D6] hover:scale-[1.02] active:scale-[0.98] transition-all ml-2"
-                    >
-                        <Download size={16} /> Resume
-                    </a>
                 </div>
             </div>
 

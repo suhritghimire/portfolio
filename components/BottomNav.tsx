@@ -6,11 +6,10 @@ import { Home, Briefcase, Code, Book, Mail } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 const navItems = [
-    { name: 'Home', href: '/', icon: Home, color: 'bg-blue-500', textColor: 'text-blue-500' },
-    { name: 'Experience', href: '/experience', icon: Briefcase, color: 'bg-green-500', textColor: 'text-green-500' },
-    { name: 'Projects', href: '/projects', icon: Code, color: 'bg-amber-500', textColor: 'text-amber-500' },
-
-    { name: 'Contact', href: '/contact', icon: Mail, color: 'bg-purple-500', textColor: 'text-purple-500' },
+    { name: 'Home', href: '/#', icon: Home, color: 'bg-blue-500', textColor: 'text-blue-500' },
+    { name: 'Experience', href: '#experience', icon: Briefcase, color: 'bg-green-500', textColor: 'text-green-500' },
+    { name: 'Projects', href: '#projects', icon: Code, color: 'bg-amber-500', textColor: 'text-amber-500' },
+    { name: 'Contact', href: '#contact', icon: Mail, color: 'bg-purple-500', textColor: 'text-purple-500' },
 ];
 
 export default function BottomNav() {

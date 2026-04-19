@@ -91,22 +91,40 @@ export default function Home() {
         </div>
       </motion.section>
 
-      {/* Mobile-Only Stacked Sections */}
-      <div className="block lg:hidden space-y-24 pt-12 border-t border-gray-100">
-        <section className="space-y-8">
-          <h2 className="text-3xl font-bold tracking-tight">Work & Education</h2>
+      {/* Speech AI Interest Section */}
+      <motion.section
+        initial={{ opacity: 0, scale: 0.95 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        viewport={{ once: true }}
+        className="relative overflow-hidden bg-gradient-to-br from-[#4285F4]/10 to-[#34A853]/10 rounded-[2.5rem] p-10 lg:p-14 border border-blue-100"
+      >
+        <div className="max-w-4xl relative z-10">
+          <h2 className="text-3xl font-bold mb-6 flex items-center gap-3">
+             Speech AI Research
+          </h2>
+          <p className="text-lg text-gray-800 leading-relaxed">
+            I am currently <span className="font-semibold text-blue-700">developing a framework for zero-shot spontaneous TTS voice cloning</span> that preserves natural disfluencies (filled pauses, word repetitions, prosodic variations)—a key gap in current expressive speech synthesis. 
+          </p>
+          <p className="text-lg text-gray-800 leading-relaxed mt-4">
+            Implementing a speaker-encoder architecture combined with a non-autoregressive duration predictor and experimenting with self-supervised representations to capture spontaneous speech characteristics from minimal target speaker data.
+          </p>
+        </div>
+      </motion.section>
+
+      {/* Main Content Sections */}
+      <div className="space-y-32 pt-12 border-t border-gray-100">
+        <section id="experience" className="space-y-12">
+          <h2 className="text-4xl font-bold tracking-tight">Work & Education</h2>
           <Experience />
         </section>
 
-        <section className="space-y-8">
-          <h2 className="text-3xl font-bold tracking-tight">Projects</h2>
+        <section id="projects" className="space-y-12">
+          <h2 className="text-4xl font-bold tracking-tight">Projects</h2>
           <Projects />
         </section>
 
-
-
-        <section className="space-y-8">
-          <h2 className="text-3xl font-bold tracking-tight">Contact</h2>
+        <section id="contact" className="space-y-12">
+          <h2 className="text-4xl font-bold tracking-tight">Get in Touch</h2>
           <Contact />
         </section>
       </div>
