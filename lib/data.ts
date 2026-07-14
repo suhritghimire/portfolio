@@ -44,10 +44,8 @@ export const experience = [
     role: "Co-Founder & Lead Developer",
     period: "Feb 2026 - Present",
     description: [
-      "Co-founded and architected Suchak, an interactive civic-tech platform linking citizen complaints to their elected representatives based on geographical ward boundaries.",
-      "Implemented server-side ray-casting boundaries detection on simplified Nepal GeoJSON polygons in the Next.js API layer to resolve coordinates to wards instantly.",
-      "Optimized media pipelines by integrating Cloudflare R2 object storage with Supabase database systems, reducing Postgres query latency and network egress costs by 80%.",
-      "Designed and built automated image scraping and curation systems to verify and maintain platform evidence integrity.",
+      "Co-founded and architected Suchak, mapping complaints to Nepal's local elected leaders.",
+      "Engineered server-side GIS ray-casting, R2 media CDNs, and Supabase caches.",
     ],
     link: "https://github.com/Shree5vatsa/HamiSuchak",
   },
@@ -57,9 +55,8 @@ export const experience = [
     role: "Software Engineer",
     period: "Dec 2025 - Feb 2026",
     description: [
-      "Developed a robust browser plugin to automate complex visa form filling processes using JavaScript, significantly reducing manual data entry time.",
-      " implemented intelligent form field detection and auto-population logic to handle various visa application portals.",
-      "Optimized the plugin performance for seamless user experience across different browser environments."
+      "Developed a browser plugin to automate complex visa form filling processes.",
+      "Optimized field detection and auto-population logic to reduce entry time.",
     ],
     link: "#",
   },
@@ -70,9 +67,7 @@ export const experience = [
     period: "May – July 2024",
     description: [
       "Built responsive UI components for the LevelUp platform using React.",
-      "Applied optimization techniques such as dynamic programming to improve performance and resource efficiency.",
-      "Designed UI prototypes in Figma and participated in code reviews and team knowledge-sharing sessions.",
-      "Design systems verification and UI component styling utilizing custom design tokens."
+      "Designed UI prototypes in Figma and participated in team code reviews.",
     ],
     link: "https://drive.google.com/file/d/1PInXlWxzEL-QD-s5kg_1YyK6Ph4JnYR1/view?usp=sharing",
   },
