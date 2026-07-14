@@ -4,6 +4,7 @@ import path from 'path';
 
 export const size = { width: 32, height: 32 };
 export const contentType = 'image/png';
+export const dynamic = 'force-static';
 
 export default function Icon() {
   const imagePath = path.join(process.cwd(), 'public', 'profile.jpeg');
