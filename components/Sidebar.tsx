@@ -6,7 +6,7 @@ import { Mail, Github, Linkedin } from 'lucide-react';
 
 export default function Sidebar() {
     return (
-        <aside className="w-full lg:w-80 h-auto lg:h-screen lg:fixed lg:top-0 lg:left-0 bg-white border-r border-zinc-200 flex flex-col p-8 z-40 overflow-y-auto shadow-sm">
+        <aside className="w-full lg:w-80 h-auto lg:h-screen lg:fixed lg:top-0 lg:left-0 bg-white border-b lg:border-b-0 lg:border-r border-zinc-200 flex flex-col p-6 sm:p-8 z-40 overflow-y-auto shadow-sm">
             {/* Profile Header */}
             <div className="flex flex-col items-start pt-4">
                 {/* Google Brand Ring */}

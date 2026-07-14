@@ -40,7 +40,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <Sidebar />
-          <main className="flex-1 lg:ml-80 min-h-screen p-8 lg:p-16 max-w-5xl mx-auto pb-32">
+          <main className="flex-1 lg:ml-80 min-h-screen p-4 sm:p-8 lg:p-16 max-w-5xl mx-auto pb-32">
             {children}
           </main>
           <BottomNav />

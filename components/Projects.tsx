@@ -23,18 +23,18 @@ export default function Projects() {
                         whileInView={{ opacity: 1, scale: 1 }}
                         viewport={{ once: true }}
                         whileHover={{ scale: 1.02 }}
-                        className={`group relative bg-white border ${color.border} ${color.hoverBorder} rounded-[2rem] p-8 overflow-hidden cursor-pointer shadow-sm hover:shadow-md shadow-zinc-100 transition-all duration-300`}
+                        className={`group relative bg-white border ${color.border} ${color.hoverBorder} rounded-2xl md:rounded-[2rem] p-6 md:p-8 overflow-hidden cursor-pointer shadow-sm hover:shadow-md shadow-zinc-100 transition-all duration-300`}
                     >
                         <div className="relative z-10">
-                            <div className="flex justify-between items-start">
-                                <div>
+                            <div className="flex justify-between items-start gap-4">
+                                <div className="flex-1">
                                     <span className={`text-xs font-bold ${color.text} uppercase tracking-wider mb-2 block`}>
                                         PROJECT
                                     </span>
-                                    <h3 className="text-3xl font-bold mb-2 tracking-tight text-zinc-900">
+                                    <h3 className="text-xl md:text-3xl font-bold mb-2 tracking-tight text-zinc-900 leading-snug">
                                         {project.title}
                                     </h3>
-                                    <p className="text-zinc-600 leading-relaxed mb-6 max-w-xl">
+                                    <p className="text-sm md:text-base text-zinc-600 leading-relaxed mb-6 max-w-xl">
                                         {project.points[0]}
                                     </p>
                                 </div>
@@ -43,16 +43,16 @@ export default function Projects() {
                                         href={project.link}
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        className={`p-3 rounded-full ${color.bg} ${color.text} transition-colors hover:brightness-95 border border-current/10`}
+                                        className={`p-2.5 md:p-3 rounded-full ${color.bg} ${color.text} transition-colors hover:brightness-95 border border-current/10 shrink-0`}
                                     >
-                                        <ArrowUpRight size={24} />
+                                        <ArrowUpRight size={20} className="md:w-6 md:h-6" />
                                     </a>
                                 )}
                             </div>
 
-                            <div className="flex flex-wrap gap-2">
+                            <div className="flex flex-wrap gap-1.5 md:gap-2">
                                 {project.tech.map((t, i) => (
-                                    <span key={i} className={`px-3 py-1 ${color.bg} ${color.text} rounded-full text-xs font-semibold border border-current/10`}>
+                                    <span key={i} className={`px-2.5 py-1 ${color.bg} ${color.text} rounded-full text-[10px] md:text-xs font-semibold border border-current/10`}>
                                         {t}
                                     </span>
                                 ))}

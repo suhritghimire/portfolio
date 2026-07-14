@@ -39,25 +39,25 @@ export default function Experience() {
 
                                 <motion.div
                                     whileHover={{ scale: 1.02 }}
-                                    className={`group relative bg-white border ${color.border} rounded-[2rem] p-8 overflow-hidden shadow-sm hover:shadow-md transition-all duration-300`}
+                                    className={`group relative bg-white border ${color.border} rounded-2xl md:rounded-[2rem] p-6 md:p-8 overflow-hidden shadow-sm hover:shadow-md transition-all duration-300`}
                                 >
                                     <div className={`absolute inset-0 opacity-[0.02] ${color.bg}`} />
 
                                     <div className="relative z-10 flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-4">
                                         <div>
-                                            <h3 className="text-2xl font-bold text-zinc-900 flex items-center gap-2">
+                                            <h3 className="text-xl md:text-2xl font-bold text-zinc-900 flex items-center gap-2">
                                                 {exp.role}
                                             </h3>
-                                            <p className={`font-semibold text-lg ${color.text}`}>{exp.company}</p>
+                                            <p className={`font-semibold text-base md:text-lg ${color.text}`}>{exp.company}</p>
                                         </div>
-                                        <span className={`self-start px-4 py-1.5 text-xs font-bold uppercase tracking-wider ${color.lightBg} ${color.text} rounded-full flex items-center gap-2 border border-current/10`}>
+                                        <span className={`self-start px-3 py-1 md:px-4 md:py-1.5 text-[10px] md:text-xs font-bold uppercase tracking-wider ${color.lightBg} ${color.text} rounded-full flex items-center gap-2 border border-current/10`}>
                                             <Calendar size={12} /> {exp.period}
                                         </span>
                                     </div>
 
-                                    <ul className="relative z-10 space-y-3 text-zinc-600 leading-relaxed text-base">
+                                    <ul className="relative z-10 space-y-3 text-sm md:text-base text-zinc-600 leading-relaxed">
                                         {exp.description.map((desc, i) => (
-                                            <li key={i} className="flex gap-3">
+                                            <li key={i} className="flex gap-2.5">
                                                 <span className={`mt-1.5 min-w-[6px] ${color.text}`}>•</span>
                                                 <span>{desc}</span>
                                             </li>
@@ -93,20 +93,20 @@ export default function Experience() {
 
                                 <motion.div
                                     whileHover={{ scale: 1.02 }}
-                                    className={`group relative bg-white border ${color.border} rounded-[2rem] p-8 overflow-hidden shadow-sm hover:shadow-md transition-all duration-300`}
+                                    className={`group relative bg-white border ${color.border} rounded-2xl md:rounded-[2rem] p-6 md:p-8 overflow-hidden shadow-sm hover:shadow-md transition-all duration-300`}
                                 >
                                     <div className={`absolute inset-0 opacity-[0.02] ${color.bg}`} />
 
                                     <div className="relative z-10 flex flex-col md:flex-row md:items-start md:justify-between gap-4">
                                         <div>
-                                            <h3 className="text-2xl font-bold text-zinc-900">{edu.institution}</h3>
-                                            <p className={`font-semibold text-lg ${color.text}`}>{edu.degree}</p>
+                                            <h3 className="text-xl md:text-2xl font-bold text-zinc-900">{edu.institution}</h3>
+                                            <p className={`font-semibold text-base md:text-lg ${color.text}`}>{edu.degree}</p>
                                         </div>
-                                        <div className="text-right flex flex-col items-end gap-2">
-                                            <span className={`px-4 py-1.5 text-xs font-bold uppercase tracking-wider ${color.lightBg} text-zinc-500 rounded-full border border-current/10`}>
+                                        <div className="text-left md:text-right flex flex-col items-start md:items-end gap-2 shrink-0">
+                                            <span className={`px-3 py-1 md:px-4 md:py-1.5 text-[10px] md:text-xs font-bold uppercase tracking-wider ${color.lightBg} text-zinc-500 rounded-full border border-current/10`}>
                                                 {edu.year}
                                             </span>
-                                            <span className={`text-sm font-bold ${color.text} ${color.lightBg} px-3 py-1 rounded-lg border border-current/10`}>
+                                            <span className={`text-xs md:text-sm font-bold ${color.text} ${color.lightBg} px-2.5 py-0.5 md:px-3 md:py-1 rounded-lg border border-current/10`}>
                                                 Grade: {edu.grade}
                                             </span>
                                         </div>

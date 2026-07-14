@@ -16,7 +16,7 @@ export default function Contact() {
 
     return (
         <div className="max-w-xl">
-            <div className="relative overflow-hidden bg-white border border-zinc-200 rounded-[2.5rem] p-8 shadow-md shadow-zinc-200/30">
+            <div className="relative overflow-hidden bg-white border border-zinc-200 rounded-2xl sm:rounded-[2.5rem] p-6 sm:p-8 shadow-md shadow-zinc-200/30">
                 {/* Decorative Google Gradient Line */}
                 <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-blue-500 via-red-500 to-yellow-500" />
 
@@ -25,7 +25,7 @@ export default function Contact() {
                         <p className="text-sm font-bold text-zinc-400 uppercase tracking-widest">Email</p>
                         <a 
                             href="mailto:suhrit1ghimire@gmail.com" 
-                            className="text-2xl font-bold text-blue-600 hover:text-blue-700 transition-colors break-all"
+                            className="text-xl sm:text-2xl font-bold text-blue-600 hover:text-blue-700 transition-colors break-all"
                         >
                             suhrit1ghimire@gmail.com
                         </a>
@@ -35,7 +35,7 @@ export default function Contact() {
                         <p className="text-sm font-bold text-zinc-400 uppercase tracking-widest">Phone</p>
                         <a 
                             href="tel:+919625609307" 
-                            className="text-2xl font-bold text-green-600 hover:text-green-700 transition-colors"
+                            className="text-xl sm:text-2xl font-bold text-green-600 hover:text-green-700 transition-colors"
                         >
                             +91 9625609307
                         </a>
