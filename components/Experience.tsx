@@ -6,22 +6,22 @@ import { Briefcase, GraduationCap, Calendar } from 'lucide-react';
 
 export default function Experience() {
     const googleColors = [
-        { bg: 'bg-[#4285F4]', text: 'text-blue-400', border: 'border-blue-900/30', lightBg: 'bg-blue-900/20' },
-        { bg: 'bg-[#EA4335]', text: 'text-red-400', border: 'border-red-900/30', lightBg: 'bg-red-900/20' },
-        { bg: 'bg-[#FBBC05]', text: 'text-yellow-400', border: 'border-yellow-900/30', lightBg: 'bg-yellow-900/20' },
-        { bg: 'bg-[#34A853]', text: 'text-green-400', border: 'border-green-900/30', lightBg: 'bg-green-900/20' },
+        { bg: 'bg-[#4285F4]', text: 'text-blue-600', border: 'border-blue-100', lightBg: 'bg-blue-50' },
+        { bg: 'bg-[#EA4335]', text: 'text-red-600', border: 'border-red-100', lightBg: 'bg-red-50' },
+        { bg: 'bg-[#FBBC05]', text: 'text-amber-600', border: 'border-amber-100', lightBg: 'bg-amber-50/50' },
+        { bg: 'bg-[#34A853]', text: 'text-green-600', border: 'border-green-100', lightBg: 'bg-green-50' },
     ];
 
     return (
         <div className="space-y-16 relative">
-            <div className="hidden lg:block absolute left-8 top-0 bottom-0 w-0.5 bg-zinc-800" />
+            <div className="hidden lg:block absolute left-8 top-0 bottom-0 w-0.5 bg-zinc-200" />
 
             <section className="space-y-8">
                 <div className="flex items-center gap-4 mb-8">
-                    <div className="p-3 bg-blue-900/20 text-blue-400 rounded-xl z-10 relative">
+                    <div className="p-3 bg-blue-50 text-blue-600 rounded-xl z-10 relative border border-blue-100">
                         <Briefcase size={24} />
                     </div>
-                    <h2 className="text-2xl font-bold tracking-tight text-zinc-100">Work History</h2>
+                    <h2 className="text-2xl font-bold tracking-tight text-zinc-900">Work History</h2>
                 </div>
 
                 <div className="space-y-12">
@@ -35,27 +35,27 @@ export default function Experience() {
                                 viewport={{ once: true, margin: "-100px" }}
                                 className="relative pl-0 lg:pl-24"
                             >
-                                <div className={`hidden lg:flex absolute left-[29px] top-6 w-3 h-3 ${color.bg} rounded-full ring-4 ring-black z-10 shadow-sm`} />
+                                <div className={`hidden lg:flex absolute left-[29px] top-6 w-3 h-3 ${color.bg} rounded-full ring-4 ring-white z-10 shadow-sm`} />
 
                                 <motion.div
                                     whileHover={{ scale: 1.02 }}
-                                    className={`group relative bg-zinc-900/50 border ${color.border} rounded-[2rem] p-8 overflow-hidden hover:shadow-lg transition-all duration-300`}
+                                    className={`group relative bg-white border ${color.border} rounded-[2rem] p-8 overflow-hidden shadow-sm hover:shadow-md transition-all duration-300`}
                                 >
-                                    <div className={`absolute inset-0 opacity-[0.05] ${color.bg}`} />
+                                    <div className={`absolute inset-0 opacity-[0.02] ${color.bg}`} />
 
                                     <div className="relative z-10 flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-4">
                                         <div>
-                                            <h3 className="text-2xl font-bold text-zinc-100 flex items-center gap-2">
+                                            <h3 className="text-2xl font-bold text-zinc-900 flex items-center gap-2">
                                                 {exp.role}
                                             </h3>
                                             <p className={`font-semibold text-lg ${color.text}`}>{exp.company}</p>
                                         </div>
-                                        <span className={`self-start px-4 py-1.5 text-xs font-bold uppercase tracking-wider ${color.lightBg} ${color.text} rounded-full flex items-center gap-2`}>
+                                        <span className={`self-start px-4 py-1.5 text-xs font-bold uppercase tracking-wider ${color.lightBg} ${color.text} rounded-full flex items-center gap-2 border border-current/10`}>
                                             <Calendar size={12} /> {exp.period}
                                         </span>
                                     </div>
 
-                                    <ul className="relative z-10 space-y-3 text-zinc-300 leading-relaxed text-base">
+                                    <ul className="relative z-10 space-y-3 text-zinc-600 leading-relaxed text-base">
                                         {exp.description.map((desc, i) => (
                                             <li key={i} className="flex gap-3">
                                                 <span className={`mt-1.5 min-w-[6px] ${color.text}`}>•</span>
@@ -72,10 +72,10 @@ export default function Experience() {
 
             <section className="space-y-8 relative">
                 <div className="flex items-center gap-4 mb-8">
-                    <div className="p-3 bg-green-900/20 text-green-400 rounded-xl z-10 relative">
+                    <div className="p-3 bg-green-50 text-green-600 rounded-xl z-10 relative border border-green-100">
                         <GraduationCap size={24} />
                     </div>
-                    <h2 className="text-2xl font-bold tracking-tight text-zinc-100">Academics</h2>
+                    <h2 className="text-2xl font-bold tracking-tight text-zinc-900">Academics</h2>
                 </div>
 
                 <div className="space-y-12">
@@ -89,24 +89,24 @@ export default function Experience() {
                                 viewport={{ once: true, margin: "-100px" }}
                                 className="relative pl-0 lg:pl-24"
                             >
-                                <div className={`hidden lg:flex absolute left-[29px] top-6 w-3 h-3 ${color.bg} rounded-full ring-4 ring-black z-10 shadow-sm`} />
+                                <div className={`hidden lg:flex absolute left-[29px] top-6 w-3 h-3 ${color.bg} rounded-full ring-4 ring-white z-10 shadow-sm`} />
 
                                 <motion.div
                                     whileHover={{ scale: 1.02 }}
-                                    className={`group relative bg-zinc-900/50 border ${color.border} rounded-[2rem] p-8 overflow-hidden hover:shadow-lg transition-all duration-300`}
+                                    className={`group relative bg-white border ${color.border} rounded-[2rem] p-8 overflow-hidden shadow-sm hover:shadow-md transition-all duration-300`}
                                 >
-                                    <div className={`absolute inset-0 opacity-[0.05] ${color.bg}`} />
+                                    <div className={`absolute inset-0 opacity-[0.02] ${color.bg}`} />
 
                                     <div className="relative z-10 flex flex-col md:flex-row md:items-start md:justify-between gap-4">
                                         <div>
-                                            <h3 className="text-2xl font-bold text-zinc-100">{edu.institution}</h3>
+                                            <h3 className="text-2xl font-bold text-zinc-900">{edu.institution}</h3>
                                             <p className={`font-semibold text-lg ${color.text}`}>{edu.degree}</p>
                                         </div>
                                         <div className="text-right flex flex-col items-end gap-2">
-                                            <span className={`px-4 py-1.5 text-xs font-bold uppercase tracking-wider ${color.lightBg} text-zinc-400 rounded-full`}>
+                                            <span className={`px-4 py-1.5 text-xs font-bold uppercase tracking-wider ${color.lightBg} text-zinc-500 rounded-full border border-current/10`}>
                                                 {edu.year}
                                             </span>
-                                            <span className={`text-sm font-bold ${color.text} ${color.lightBg} px-3 py-1 rounded-lg`}>
+                                            <span className={`text-sm font-bold ${color.text} ${color.lightBg} px-3 py-1 rounded-lg border border-current/10`}>
                                                 Grade: {edu.grade}
                                             </span>
                                         </div>
