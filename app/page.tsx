@@ -26,7 +26,7 @@ export default function Home() {
             I am <span className="font-semibold text-zinc-900">{personalInfo.name}</span>, a developer specializing in <span className="text-zinc-900 font-semibold">ML, DL, NLP, and Speech AI</span>.
           </p>
           <p>
-            I specialize in architecting transformer models and building high-throughput data pipelines for linguistic intelligence. Currently pursuing Computer Science Engineering at <strong>Delhi Technological University</strong>.
+            I specialize in architecting transformer models and building high-throughput data pipelines for linguistic intelligence.
           </p>
         </div>
       </motion.section>

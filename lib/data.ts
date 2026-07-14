@@ -9,7 +9,7 @@ export const personalInfo = {
   resume: "https://drive.google.com/file/d/1-wH_3Em-qfmlc87WIErY186X6xv_Bzdm/view?usp=sharing",
   location: "New Delhi, India",
   image: "/profile.jpeg",
-  about: "I am a Computer Science Engineering student at Delhi Technological University specializing in ML, DL, and NLP. My work focuses on architecting transformer-based systems, Speech AI (specifically Spontaneous TTS), fine-tuning neural models, and building robust linguistic data pipelines. I am also an active researcher in low-resource languages and an active competitive programmer.",
+  about: "I am a Computer Science Engineering student specializing in ML, DL, and NLP. My work focuses on architecting transformer-based systems, Speech AI (specifically Spontaneous TTS), fine-tuning neural models, and building robust linguistic data pipelines. I am also an active researcher in low-resource languages and an active competitive programmer.",
   interests: [
     "Speech AI & TTS",
     "Machine Learning (ML)",
@@ -47,7 +47,7 @@ export const experience = [
       "Co-founded and architected Suchak, mapping complaints to Nepal's local elected leaders.",
       "Engineered server-side GIS ray-casting, R2 media CDNs, and Supabase caches.",
     ],
-    link: "https://github.com/Shree5vatsa/HamiSuchak",
+    link: "https://www.suchak.online",
   },
   {
     company: "WIZA",
@@ -80,7 +80,7 @@ export const projects = [
     points: [
       "Interactive civic-tech map linking citizen complaints directly to Nepalese local elected leaders.",
     ],
-    link: "https://github.com/Shree5vatsa/HamiSuchak",
+    link: "https://www.suchak.online",
   },
   {
     title: "Transformer Architecture Implementation from Scratch",
