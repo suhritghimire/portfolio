@@ -43,12 +43,6 @@ export default function Contact() {
                 </div>
             </div>
 
-            <div className="mt-12 text-center text-sm text-zinc-500">
-                <p>Alternatively, reach out directly at:</p>
-                <a href="mailto:suhrit1ghimire@gmail.com" className="font-bold text-zinc-800 hover:text-blue-600 transition-colors mt-1 block">
-                    suhrit1ghimire@gmail.com
-                </a>
-            </div>
         </div>
     );
 }
