@@ -83,9 +83,7 @@ export const projects = [
     title: "Suchak (HamiSuchak) – Civic Tech & Geospatial Mapping",
     tech: ["Next.js", "TypeScript", "Supabase", "Cloudflare R2", "Framer Motion", "Tailwind CSS"],
     points: [
-      "An interactive, geo-targeted accountability map linking public complaints directly to Nepalese local and national representatives.",
-      "Integrated simplified GIS polygon boundaries mapping with ray-casting for instant coordinate-to-ward resolution.",
-      "Engineered automated media pipelines backed by Cloudflare R2 and Supabase for lightweight metadata and media hosting.",
+      "An interactive, geo-targeted accountability map in Nepal linking civic infrastructure complaints directly to responsible ward leaders, mayors, and MPs via GIS boundary matching.",
     ],
     link: "https://github.com/Shree5vatsa/HamiSuchak",
   },
@@ -93,9 +91,7 @@ export const projects = [
     title: "Transformer Architecture Implementation from Scratch",
     tech: ["PyTorch", "NumPy", "Matplotlib"],
     points: [
-      "Implemented the complete 'Attention Is All You Need' architecture using core PyTorch kernels.",
-      "Coded Multi-Head Attention, Position-wise Feed-Forward networks, and Sinusoidal Positional Encodings manually.",
-      "Built a modular encoder-decoder stack with residual connections and layer normalization to understand modern neural foundations.",
+      "A modular, from-scratch PyTorch implementation of the full 'Attention Is All You Need' encoder-decoder stack, coding multi-head attention and sinusoidal encodings manually.",
     ],
     link: "https://github.com/suhritghimire/Transformer-from-Scratch-Using-only-PyTorch",
   },
@@ -103,9 +99,7 @@ export const projects = [
     title: "Hate Speech Classification with BERT & Attention",
     tech: ["PyTorch", "Transformers", "BERT", "LSTM", "Scikit-learn"],
     points: [
-      "Fine-tuned BERT variants (base, large, multilingual) reaching a 92% F1-score on complex social media datasets.",
-      "Implemented custom Attention layers over Bi-directional LSTMs to visualize and interpret hate-indicative token importance.",
-      "Conducted ablation studies on layer freezing and unfrozen weights to optimize transformer convergence in specific domains.",
+      "Fine-tuned BERT and attention-based Bi-directional LSTM models to classify complex social media datasets, achieving a 92% F1-score with token importance visualizations.",
     ],
     link: "https://github.com/suhritghimire/Hate-Speech-Detection-Using-Bi-directional-LSTM",
   },
@@ -113,9 +107,7 @@ export const projects = [
     title: "bRial – Content Platform with Data Quality Pipeline",
     tech: ["Flutter", "Firebase", "Python", "Word2Vec"],
     points: [
-      "Architected a scalable cloud-based data backend using Firebase to manage user-generated content.",
-      "Developed a data quality pipeline using Word2Vec and ML models to analyze and filter content, ensuring platform integrity.",
-      "Optimized data flows and state management using BLoC pattern for data-intensive operations.",
+      "A mobile content platform built with Flutter and Firebase, featuring a custom Word2Vec machine learning pipeline to analyze, rank, and filter user-generated text.",
     ],
     link: "https://brial-6fd01.web.app",
   },
