@@ -48,7 +48,7 @@ export default function Home() {
         <div className="space-y-6">
           <h3 className="text-sm font-bold uppercase tracking-widest text-zinc-500 border-b border-zinc-800 pb-4">Toolkit</h3>
           <div className="flex flex-wrap gap-3">
-            {['Python', 'C++', 'SQL', 'Pandas', 'NumPy', 'PyTorch', 'TensorFlow', 'Flutter', 'Dart', 'Scikit-learn', 'Git'].map((tech, i) => {
+            {['Python', 'C++', 'SQL', 'Pandas', 'NumPy', 'PyTorch', 'TensorFlow', 'Flutter', 'Dart', 'Next.js', 'TypeScript', 'Supabase', 'Cloudflare R2', 'Scikit-learn', 'Git'].map((tech, i) => {
               const colors = [
                 'border-blue-900/30 bg-blue-950/20 text-blue-400 hover:bg-blue-600',
                 'border-red-900/30 bg-red-950/20 text-red-400 hover:bg-red-600',
@@ -103,6 +103,23 @@ export default function Home() {
           </h2>
           <p className="text-lg text-zinc-200 leading-relaxed">
             Building a <span className="font-semibold text-blue-400">zero-shot spontaneous TTS framework</span> to clone voices while preserving natural disfluencies (filled pauses, prosody). My work combines speaker-encoder architectures with self-supervised representations to capture expressive speech markers from minimal target data.
+          </p>
+        </div>
+      </motion.section>
+
+      {/* Suchak (HamiSuchak) Cofounder Section */}
+      <motion.section
+        initial={{ opacity: 0, scale: 0.95 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        viewport={{ once: true }}
+        className="relative overflow-hidden bg-black rounded-[2.5rem] p-10 lg:p-14 border border-zinc-800"
+      >
+        <div className="max-w-4xl relative z-10">
+          <h2 className="text-3xl font-bold mb-6 flex items-center gap-3 text-white">
+             Cofounder & Developer @ Suchak (HamiSuchak)
+          </h2>
+          <p className="text-lg text-zinc-200 leading-relaxed">
+            Co-founded and developed <span className="font-semibold text-red-400">Suchak</span>, a civic-tech and geospatial mapping platform in Nepal. Implemented server-side ray-casting boundary matching on Nepal GeoJSON polygons to instantly map infrastructure complaints to their responsible Ward Leaders, Mayors, and MPs. Engineered high-performance media upload and delivery pipelines utilizing Cloudflare R2 and Supabase caching.
           </p>
         </div>
       </motion.section>

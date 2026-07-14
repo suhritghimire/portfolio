@@ -39,6 +39,19 @@ export const education = [
 
 export const experience = [
   {
+    company: "Suchak (HamiSuchak)",
+    location: "Kathmandu, Nepal (Remote)",
+    role: "Co-Founder & Lead Developer",
+    period: "Feb 2026 - Present",
+    description: [
+      "Co-founded and architected Suchak, an interactive civic-tech platform linking citizen complaints to their elected representatives based on geographical ward boundaries.",
+      "Implemented server-side ray-casting boundaries detection on simplified Nepal GeoJSON polygons in the Next.js API layer to resolve coordinates to wards instantly.",
+      "Optimized media pipelines by integrating Cloudflare R2 object storage with Supabase database systems, reducing Postgres query latency and network egress costs by 80%.",
+      "Designed and built automated image scraping and curation systems to verify and maintain platform evidence integrity.",
+    ],
+    link: "https://github.com/Shree5vatsa/HamiSuchak",
+  },
+  {
     company: "WIZA",
     location: "Remote",
     role: "Software Engineer",
@@ -59,12 +72,23 @@ export const experience = [
       "Built responsive UI components for the LevelUp platform using React.",
       "Applied optimization techniques such as dynamic programming to improve performance and resource efficiency.",
       "Designed UI prototypes in Figma and participated in code reviews and team knowledge-sharing sessions.",
+      "Design systems verification and UI component styling utilizing custom design tokens."
     ],
     link: "https://drive.google.com/file/d/1PInXlWxzEL-QD-s5kg_1YyK6Ph4JnYR1/view?usp=sharing",
   },
 ];
 
 export const projects = [
+  {
+    title: "Suchak (HamiSuchak) – Civic Tech & Geospatial Mapping",
+    tech: ["Next.js", "TypeScript", "Supabase", "Cloudflare R2", "Framer Motion", "Tailwind CSS"],
+    points: [
+      "An interactive, geo-targeted accountability map linking public complaints directly to Nepalese local and national representatives.",
+      "Integrated simplified GIS polygon boundaries mapping with ray-casting for instant coordinate-to-ward resolution.",
+      "Engineered automated media pipelines backed by Cloudflare R2 and Supabase for lightweight metadata and media hosting.",
+    ],
+    link: "https://github.com/Shree5vatsa/HamiSuchak",
+  },
   {
     title: "Transformer Architecture Implementation from Scratch",
     tech: ["PyTorch", "NumPy", "Matplotlib"],
@@ -100,6 +124,7 @@ export const projects = [
 export const skills = {
   "Data Engineering": ["SQL", "Python (Pandas, NumPy)", "ETL Concepts", "Data Modeling"],
   "Applied Science & ML": ["PyTorch", "TensorFlow", "Transformers", "BERT", "LSTM", "Deep Learning", "Linear Algebra"],
+  "Web & Systems": ["Next.js", "React", "TypeScript", "Node.js", "Supabase", "Cloudflare R2", "Framer Motion", "Tailwind CSS"],
   "Programming Languages": ["Python", "C", "C++", "Dart", "JavaScript"],
   "Tools & Frameworks": ["Flutter", "Git", "GitHub", "VS Code", "Jupyter Notebook", "Scikit-learn", "Matplotlib"],
 };
