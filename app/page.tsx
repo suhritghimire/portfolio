@@ -107,7 +107,7 @@ export default function Home() {
         </div>
       </motion.section>
 
-      {/* Suchak (HamiSuchak) Cofounder Section */}
+      {/* Suchak Cofounder Section */}
       <motion.section
         initial={{ opacity: 0, scale: 0.95 }}
         whileInView={{ opacity: 1, scale: 1 }}
@@ -116,7 +116,7 @@ export default function Home() {
       >
         <div className="max-w-4xl relative z-10">
           <h2 className="text-2xl md:text-3xl font-bold mb-4 flex items-center gap-3 text-zinc-900">
-             Cofounder & Developer @ Suchak (HamiSuchak)
+             Co-Founder & Developer @ Suchak
           </h2>
           <p className="text-base md:text-lg text-zinc-700 leading-relaxed">
             Co-founded and developed <span className="font-semibold text-red-600">Suchak</span>, a civic-tech map linking complaints directly to Nepal's local elected leaders. Engineered polygon ray-casting APIs, R2 media CDNs, and Supabase database query caches.

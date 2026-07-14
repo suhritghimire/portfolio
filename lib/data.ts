@@ -39,9 +39,9 @@ export const education = [
 
 export const experience = [
   {
-    company: "Suchak (HamiSuchak)",
+    company: "Suchak",
     location: "Kathmandu, Nepal (Remote)",
-    role: "Co-Founder & Lead Developer",
+    role: "Co-Founder & Developer",
     period: "Feb 2026 - Present",
     description: [
       "Co-founded and architected Suchak, mapping complaints to Nepal's local elected leaders.",
@@ -75,7 +75,7 @@ export const experience = [
 
 export const projects = [
   {
-    title: "Suchak (HamiSuchak) – Civic Tech & Geospatial Mapping",
+    title: "Suchak – Civic Tech & Geospatial Mapping",
     tech: ["Next.js", "TypeScript", "Supabase", "Cloudflare R2", "Framer Motion", "Tailwind CSS"],
     points: [
       "Interactive civic-tech map linking citizen complaints directly to Nepalese local elected leaders.",
