@@ -119,7 +119,7 @@ export default function Home() {
              Cofounder & Developer @ Suchak (HamiSuchak)
           </h2>
           <p className="text-base md:text-lg text-zinc-700 leading-relaxed">
-            Co-founded and developed <span className="font-semibold text-red-600">Suchak</span>, a civic-tech and geospatial mapping platform in Nepal. Implemented server-side ray-casting boundary matching on Nepal GeoJSON polygons to instantly map infrastructure complaints to their responsible Ward Leaders, Mayors, and MPs. Engineered high-performance media upload and delivery pipelines utilizing Cloudflare R2 and Supabase caching.
+            Co-founded and developed <span className="font-semibold text-red-600">Suchak</span>, a civic-tech map linking complaints directly to Nepal's local elected leaders. Engineered polygon ray-casting APIs, R2 media CDNs, and Supabase database query caches.
           </p>
         </div>
       </motion.section>

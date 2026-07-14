@@ -83,7 +83,7 @@ export const projects = [
     title: "Suchak (HamiSuchak) – Civic Tech & Geospatial Mapping",
     tech: ["Next.js", "TypeScript", "Supabase", "Cloudflare R2", "Framer Motion", "Tailwind CSS"],
     points: [
-      "An interactive, geo-targeted accountability map in Nepal linking civic infrastructure complaints directly to responsible ward leaders, mayors, and MPs via GIS boundary matching.",
+      "Interactive civic-tech map linking citizen complaints directly to Nepalese local elected leaders.",
     ],
     link: "https://github.com/Shree5vatsa/HamiSuchak",
   },
@@ -91,7 +91,7 @@ export const projects = [
     title: "Transformer Architecture Implementation from Scratch",
     tech: ["PyTorch", "NumPy", "Matplotlib"],
     points: [
-      "A modular, from-scratch PyTorch implementation of the full 'Attention Is All You Need' encoder-decoder stack, coding multi-head attention and sinusoidal encodings manually.",
+      "A from-scratch PyTorch implementation of the full Transformer attention encoder-decoder stack.",
     ],
     link: "https://github.com/suhritghimire/Transformer-from-Scratch-Using-only-PyTorch",
   },
@@ -99,7 +99,7 @@ export const projects = [
     title: "Hate Speech Classification with BERT & Attention",
     tech: ["PyTorch", "Transformers", "BERT", "LSTM", "Scikit-learn"],
     points: [
-      "Fine-tuned BERT and attention-based Bi-directional LSTM models to classify complex social media datasets, achieving a 92% F1-score with token importance visualizations.",
+      "Fine-tuned BERT and attention-based LSTM models to classify complex social media text.",
     ],
     link: "https://github.com/suhritghimire/Hate-Speech-Detection-Using-Bi-directional-LSTM",
   },
@@ -107,7 +107,7 @@ export const projects = [
     title: "bRial – Content Platform with Data Quality Pipeline",
     tech: ["Flutter", "Firebase", "Python", "Word2Vec"],
     points: [
-      "A mobile content platform built with Flutter and Firebase, featuring a custom Word2Vec machine learning pipeline to analyze, rank, and filter user-generated text.",
+      "A Flutter content app utilizing a custom Word2Vec machine learning quality pipeline.",
     ],
     link: "https://brial-6fd01.web.app",
   },
